@@ -1,7 +1,14 @@
-import reactlogo from "./assets/react.svg";
-export default function Header() {
+function Header() {
   return (
     <header className="header">
+      <div className="logo-title">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/201/201623.png"
+          alt="Travel Logo"
+          className="logo"
+        />
+        <h1>My Application</h1>
+      </div>
       <nav>
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>
@@ -9,8 +16,8 @@ export default function Header() {
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <img src={reactlogo} alt="React Logo" />
-      <h1>Welcome to React</h1>
     </header>
   );
 }
+
+export default Header;
